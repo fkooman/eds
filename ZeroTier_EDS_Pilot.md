@@ -127,6 +127,4 @@ These are items still to be done for the pilot:
 1. Obtaining group memberships automatically on login is not done yet, this 
    needs to be automated, currently this must be manually triggered. By going 
    to [https://zerotier.tuxed.net/portal/_voot/authorize](https://zerotier.tuxed.net/portal/_voot/authorize).
-2. It is not possible yet to see the networks to which you are invited but you 
-   didn't create yourself
 
