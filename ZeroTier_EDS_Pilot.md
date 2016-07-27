@@ -22,7 +22,7 @@ require installing a VPN service and also configuring it. Deploying a ZeroTier
 service is much simpler. 
 
 An extra use case that was investigated is running a number of virtual systems
-behind one ZeroTier instance so that thoes virtual systems could benefit from
+behind one ZeroTier instance so that those virtual systems could benefit from
 access to the network without requiring the installation of additional 
 software.
 
@@ -49,7 +49,7 @@ free software for Windows, Linux and macOS. The mobile applications are
 proprietary.
 
 A user can create a network in ZeroTier Central and add users to it. The 
-authentication to the ZeroTier Central portal uses "traditional" username and
+authentication to the ZeroTier Central portal uses "traditional" user name and
 password authentication. There is currently no support for group membership to
 allow automatic memberships of networks based on groups.
 
@@ -70,7 +70,7 @@ applications without modifying them.
 
 The ZeroTier network controller has an API that can be controlled using HTTP 
 calls for managing its networks. Every network has a configuration that 
-among other informtation includes an IP range that will be assigned to clients
+among other information includes an IP range that will be assigned to clients
 a list of members.
 
 All participants in the ZeroTier network have a 10 digit unique 
@@ -93,7 +93,7 @@ additional steps compared to ZeroTier Central.
 To create a network, the user has to do the following:
 
 1. Go the pilot portal;
-2. Authenticate using the creditials from the institute (using SURFconext);
+2. Authenticate using the credentials from the institute (using SURFconext);
 3. Register the client identifier(s) in the pilot portal by copy/pasting the 
    client identifier from the client running on the user's device;
 4. Create a network and choose a group (as created in SURFteams) to bind this 
@@ -129,5 +129,8 @@ These are items still to be done for the pilot:
 
 1. Obtaining group memberships automatically on login is not done yet, this 
    needs to be automated, currently this must be manually triggered. By going 
-   to [https://zerotier.tuxed.net/portal/_voot/authorize](https://zerotier.tuxed.net/portal/_voot/authorize).
-
+   to [https://zerotier.tuxed.net/portal/_voot/authorize](https://zerotier.tuxed.net/portal/_voot/authorize);
+2. Allow for choosing a user identifiable name when adding a client on the 
+   account page to be able to recognize them;
+3. Allow setting that a particular client is a bridge;
+4. Allow removing clients and networks;
