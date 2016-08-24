@@ -108,20 +108,31 @@ members invited to join the group.
 
 # Demo 
 
-The demo is available at 
-[https://zerotier.tuxed.net/](https://zerotier.tuxed.net/).
+A demo setup is available!
 
-To register your ZeroTier client(s) go 
-[here](https://zerotier.tuxed.net/portal/account).
+1. Go to [https://zerotier.tuxed.net/](https://zerotier.tuxed.net/);
+2. Choose your identity provider, or _onegini_ if you do not have 
+   access to one to create a new account there;
+3. Register your ZeroTier clients in the 
+   [Account](https://zerotier.tuxed.net/portal/account) tab, with the 
+   identifier(s) you can find in the GUI, or by using 
+   `zerotier-cli info` from the CLI;
+4. Click the "Obtain group membership" on the Account tab, or click 
+   [here](https://zerotier.tuxed.net/portal/_voot/authorize) (**NOTE**: this 
+   will be automated later so that this step is no longer needed);
+5. On the [ZeroTier](https://zerotier.tuxed.net/portal/zerotier) tab you can
+   find networks you created, or networks you have access to;
 
-To create a network go [here](https://zerotier.tuxed.net/portal/zerotier).
+On the [ZeroTier](https://zerotier.tuxed.net/portal/zerotier) tab you can 
+create a network at the bottom of the page, choose a group to "bind" the 
+network to. If you cannot choose a group, create one 
+[here](https://teams.connect.surfconext.nl/).
 
-To join existing networks go [here](https://zerotier.tuxed.net/portal/zerotier) 
-and they should be listed there.
-
-The SURFteams instance, for creating and managing groups as used by the 
-pilot portal, is available at 
-[https://teams.connect.surfconext.nl/](https://teams.connect.surfconext.nl/).
+The client IDs you registered will by automatically _authorized_ to join the 
+networks you have access to, but you will still need to manually join the 
+network in your ZeroTier client. To join a network you can use the listed 
+_Network ID_ to do that by providing that to your ZeroTier client in the GUI, 
+or the CLI using `zerotier-cli join <Network ID>`.
 
 # TODO
 
