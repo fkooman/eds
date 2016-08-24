@@ -134,6 +134,21 @@ network in your ZeroTier client. To join a network you can use the listed
 _Network ID_ to do that by providing that to your ZeroTier client in the GUI, 
 or the CLI using `zerotier-cli join <Network ID>`.
 
+# Code
+
+The project contains various parts:
+
+- [ZeroTier](https://zerotier.com/), with network controller enabled;
+- [Portal](https://github.com/eduvpn/vpn-user-portal/tree/zerotier);
+- [Backend](https://github.com/eduvpn/vpn-server-api/tree/zerotier);
+
+RPM packages are created for Fedora and CentOS and available 
+[here](https://copr.fedorainfracloud.org/coprs/fkooman/zerotier/), the 
+review request for inclusion in Fedora and EPEL is 
+[here](https://bugzilla.redhat.com/show_bug.cgi?id=1352169).
+
+The packages have the network controller enabled by default.
+
 # TODO
 
 These are items still to be done for the pilot:
